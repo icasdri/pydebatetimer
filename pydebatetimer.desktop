@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=Debate Timer
-Comment=Simple timer for PF Debate
-Categories=GTK;Utilities;Clock;
-Exec=pydebatetimer
-Icon=appointment-soon
-Terminal=false
-Type=Application
