@@ -16,6 +16,7 @@ setup(
         'Programming Language :: Python',
         'Programming Language :: Python :: 3'
     ],
+    data_files=[('/usr/share/applications', ['pydebatetimer.desktop'])],
     packages=find_packages(),
     entry_points={
         'gui_scripts': ['pydebatetimer = pydebatetimer.main:main'],
