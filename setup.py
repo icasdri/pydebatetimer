@@ -18,6 +18,6 @@ setup(
     ],
     packages=find_packages(),
     entry_points={
-        'console_scripts': ['pybatterymonitor = pybatterymonitor.pybatterymonitor:main']
+        'gui_scripts': ['pydebatetimer = pydebatetimer.main:main'],
     }
 )
