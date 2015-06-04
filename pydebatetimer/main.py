@@ -60,9 +60,11 @@ class MainWindow(Gtk.Window):
         table.attach(self.prep_button_b, 1, 2, 0, 1)
 
     def reset_time(self, minutes, seconds, button):
+        del button
         self.timer_button.reset(minutes, seconds)
 
     def reset_prep(self, button):
+        del button
         self.prep_button_a.reset(2, 0)
         self.prep_button_b.reset(2, 0)
 
@@ -83,6 +85,7 @@ class TimerButton(Gtk.ToggleButton):
         self._update_text()
 
     def _handle_toggled(self, button):
+        del button
         if self.get_active():
             self.id = GObject.timeout_add(1000, self._handle_second_elapsed)
         else:
